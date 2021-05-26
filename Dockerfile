@@ -1,4 +1,3 @@
-FROM python:3.7.3-alpine
+FROM parag357/build-test:pull-secret
 COPY . /app
-RUN pip install -r /app/requirements.txt
 CMD ["python","/app/app.py"]
